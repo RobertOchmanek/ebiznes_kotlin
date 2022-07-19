@@ -8,5 +8,6 @@ fun Application.configureRouting() {
     routing {
         categoriesRouting()
         productsRouting()
+        messengerRouting()
     }
 }
