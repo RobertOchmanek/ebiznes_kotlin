@@ -12,7 +12,7 @@ fun Route.messengerRouting() {
         post {
             val messageRequest = call.receive<MessageRequest>()
 
-            if (messageRequest.objecty == "page") {
+            if (messageRequest.`object` == "page") {
                 messageRequest.entry.forEach {
                     println(it.messaging[0].message)
                 }
